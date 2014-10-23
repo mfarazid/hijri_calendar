@@ -1,4 +1,6 @@
 HijriCalendar::Application.routes.draw do
+  resource :calendar, only: [:show]
+  root to: "calendar#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

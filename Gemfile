@@ -26,7 +26,15 @@ gem 'jquery-ui-rails','~> 4.2.1'
 gem 'haml'
 gem 'haml-rails'
 gem 'execjs'
-
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+# display nicer notifications using bootstrap 
+gem 'toastr-rails'
+gem 'font-awesome-rails'
+gem 'jquery-datatables-rails', '~> 2.1.10.0.2'
+gem 'pickadate-rails'
+gem 'icheck-rails',  github: 'ricardodovalle/icheck-rails'
+gem 'bootstrap_validator_rails', '~> 1.1.0'
 # ############################
 # Testing
 # ############################
