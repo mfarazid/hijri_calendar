@@ -1,2 +1,22 @@
-%h1 Calendar#show
-%p Find me in app/views/calendar/show.html.haml
+.row
+  .col-md-12.text-center
+    .well.controls
+      = link_to calendar_path(date: @date - 1.month), class: "btn btn-default pull-left" do
+        %i.fa.fa-angle-double-left.fa-2x
+      = link_to calendar_path(date: @date + 1.month), class: "btn btn-default pull-right" do
+        %i.fa.fa-angle-double-right.fa-2x
+      %h2= Hijri.convert(@date).month_name
+
+      %p.pull-left
+        Hijri #{Hijri.convert(@date).year}
+      %p.pull-right
+        = "#{@date.strftime("%B")} #{@date.year}"
+      %br  
+.row
+  .col-md-12
+    = calendar @date do |date|
+      = date.strftime("%B")
+      = date.day
+      %br/
+      %span.hijri-day
+        = Hijri.convert(date.to_time).day

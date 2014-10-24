@@ -2,3 +2,20 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.not-month {
+  color: #aaa
+}
+
+.today {
+  background:#ccc;
+  color: #fff
+}
+
+.controls a {
+  color:black;
+}
+
+.hijri-day {
+  color: #ED6511;
+  font-size: 50px;
+}

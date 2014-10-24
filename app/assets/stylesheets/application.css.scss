@@ -21,3 +21,50 @@
  */
 
 @import "bootstrap";
+
+html,
+body {
+  overflow-x: hidden!important;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  background: #f2f2f2;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+.navbar-default {
+  background: rgba(164,179,87,1);
+  background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(164,179,87,1) 0%, rgba(117,137,13,1) 99%, rgba(117,137,12,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,1)), color-stop(0%, rgba(164,179,87,1)), color-stop(99%, rgba(117,137,13,1)), color-stop(100%, rgba(117,137,12,1)));
+  background: -webkit-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(164,179,87,1) 0%, rgba(117,137,13,1) 99%, rgba(117,137,12,1) 100%);
+  background: -o-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(164,179,87,1) 0%, rgba(117,137,13,1) 99%, rgba(117,137,12,1) 100%);
+  background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(164,179,87,1) 0%, rgba(117,137,13,1) 99%, rgba(117,137,12,1) 100%);
+  background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(164,179,87,1) 0%, rgba(117,137,13,1) 99%, rgba(117,137,12,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+  border: 1px solid #59660d;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #808f1d;
+  color: #f9f9f9;
+}
